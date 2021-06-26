@@ -87,6 +87,7 @@ export default function RolletsGates() {
                     <SideMenu/>
 
                     <div className='button_content'>
+                        <h5>ВЫБЕРИТЕ БРЕНД:</h5>
                         <div className='buttonWrapper'>
                             <button autoFocus={true} onSelectCapture={true}  onClick={() => setActiveTab(1)}>alutech</button>
                             <button onClick={() => setActiveTab(2)}>doorhan</button>
@@ -205,7 +206,7 @@ export default function RolletsGates() {
                             <div className='rolletGates'>
                                 <img src={RH75} alt='роллетные ворота'/>
                                 <div className='gateView'>
-                                    <h4>РОЛЬВОРОТА ИЗ СТАЛЬНОГО ПРОФИЛЯ(ВЗЛОМОУСТОЙЧИВЫЕ) RHS75, RHS75P</h4>
+                                    <h4>РОЛЬВОРОТА ИЗ СТАЛЬНОГО ПРОФИЛЯ (ВЗЛОМОУСТОЙЧИВЫЕ) RHS75, RHS75P</h4>
                                     <div className='characteristics'>
                                         <p>Ширина проема, мм</p>
                                         <p>от 1 000 до 4 000</p>
@@ -557,6 +558,12 @@ export default function RolletsGates() {
 
                         </div>
                         }
+                        <h5>ВЫБЕРИТЕ БРЕНД:</h5>
+                        <div className='buttonWrapper'>
+                            <button onClick={() => setActiveTab(1)}>alutech</button>
+                            <button onClick={() => setActiveTab(2)}>doorhan</button>
+                            <button onClick={() => setActiveTab(3)}>стальные ворота</button>
+                        </div>
 
                     </div>
                     

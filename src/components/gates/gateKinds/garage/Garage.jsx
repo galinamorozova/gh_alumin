@@ -3,6 +3,7 @@ import ReactIntense from 'react-intense';
 
 import './garage.scss';
 import SideMenu from '../../../sideMenu/SideMenu';
+import AutomaticSection from '../AutomaticSection';
 
 import trend from '../../../../images/trend.jpg';
 import prestige from '../../../../images/45mm.jpg';
@@ -101,14 +102,15 @@ export default function Garage() {
                     <SideMenu/>
 
                     <div className='button_content'>
+                        <h5>ВЫБЕРИТЕ БРЕНД:</h5>
                         <div className='buttonWrapper'>
                             <button autoFocus={true} onSelectCapture={true}  onClick={() => setActiveTab(1)}>alutech</button>
                             <button onClick={() => setActiveTab(2)}>doorhan</button>
-                            <button onClick={() => setActiveTab(3)}>hoermann</button>
+                            <button onClick={() => setActiveTab(3)}>hoermann (готовые ворота)</button>
                         </div>
                         {activeTab === 1 && 
                             <div className='content'>
-                                
+                            <h3>гаражные ворота ALUTECH</h3>
                                 
                                 <div className='characteristicWrapper'>
                                     <div>
@@ -211,6 +213,9 @@ export default function Garage() {
                                     <h5>Палитра базовых цветов и фактур</h5>
                                     <ReactIntense src={panelColor} moveSpeed={0}/>
                                 </div>
+
+                                <AutomaticSection/>
+
                                 <h4>ДОПОЛНИТЕЛЬНЫЕ ОПЦИИ</h4>
                                 
                                     <h5>Калитка в полотне</h5>
@@ -330,6 +335,7 @@ export default function Garage() {
                         }
                         {activeTab === 2 && 
                             <div className='content'>
+                                <h3>гаражные ворота DOORHAN</h3>
 
                                 <h3>Секционные алюминиевые ворота RSD01LUX с пружинами растяжения</h3>
                                 <div className='RSD01'>
@@ -379,6 +385,8 @@ export default function Garage() {
                                     <p>коричнево-красный</p>
                                 </div>
                                 </div>
+
+                                <AutomaticSection/>
 
                                 <div className='baseWrapper'>
                                     <h4>Базовая комплектация</h4>
@@ -579,7 +587,7 @@ export default function Garage() {
                         }
                         {activeTab === 3 && 
                             <div className='content'>
-                            
+                            <h3>гаражные ворота HOERMANN</h3>
                             <img src={tittle} alt='Гаражные ворота Hörmann'/>
                             <p>Компания Hörmann уже более 80 лет занимается производством гаражных и промышленных ворот. Hörmann - это немецкое качество за разумные деньги!</p> 
                             <div className='hoermannFeatures'>
@@ -671,6 +679,12 @@ export default function Garage() {
                             </div>
                         </div>
                         }
+                        <h5>ВЫБЕРИТЕ БРЕНД:</h5>
+                        <div className='buttonWrapper'>
+                            <button onSelectCapture={true}  onClick={() => setActiveTab(1)}>alutech</button>
+                            <button onClick={() => setActiveTab(2)}>doorhan</button>
+                            <button onClick={() => setActiveTab(3)}>hoermann (готовые ворота)</button>
+                        </div>
                     </div>
                     
 

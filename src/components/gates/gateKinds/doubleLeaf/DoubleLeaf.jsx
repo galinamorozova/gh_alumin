@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import './doubleLeaf.scss';
 import SideMenu from '../../../sideMenu/SideMenu';
+import AutomaticSection from '../AutomaticSection';
+
 import colors from '../../../../images/double-leaf/colors.png';
 import rasp_goriz from '../../../../images/double-leaf/rasp_goriz.jpg';
 import avtocontrol from '../../../../images/double-leaf/avtocontrol.jpg';
@@ -68,12 +70,14 @@ export default function DoubleLeaf() {
                     <SideMenu/>
 
                     <div className='button_content'>
+                        <h5>ВЫБЕРИТЕ БРЕНД:</h5>
                         <div className='buttonWrapper'>
                             <button autoFocus={true} onSelectCapture={true}  onClick={() => setActiveTab(1)}>alutech</button>
                             <button onClick={() => setActiveTab(2)}>doorhan</button>
                         </div>
                         {activeTab === 1 && 
                             <div className='content'>
+                                <h3>распашные ворота alutech</h3>
                                 <img src={rasp_goriz} alt='Распашные ворота'/>
                                 <p>Распашные ворота позволяют экономить площади возле забора - идеальное решение для установки на участке, где вдоль периметра забора посажены деревья, кустарники или установлена беседка.</p>
 
@@ -140,12 +144,14 @@ export default function DoubleLeaf() {
                                     <p><strong>Ручное управление</strong> - в распашных воротах серии Prestige предусмотрена возможность открытия ворот вручную при помощи ручки.</p>
 
                                 </div>
+                                <AutomaticSection/>
 
 
                             </div>
                         }
                         {activeTab === 2 && 
                             <div className='content'>
+                                <h3>распашные ворота doorhan</h3>
                                 <h2>РАСПАШНЫЕ ВОРОТА В АЛЮМИНИЕВОЙ РАМЕ С ЗАПОЛНЕНИЕМ СЭНДВИЧ-ПАНЕЛЯМИ SWG-A</h2>
                                 <img src={titleDoorhan} alt='распашные ворота Дорхан'/>
                                 <h4>ХАРАКТЕРИСТИКИ:</h4>
@@ -260,6 +266,7 @@ export default function DoubleLeaf() {
                                         <p>Комплект алюминиевых столбов для крепления к проему.</p>
                                     </div>
                                 </div>
+                                <AutomaticSection/>
                                 <h4>ДОПОЛНИТЕЛЬНАЯ КОМПЛЕКТАЦИЯ</h4>
                                 <div className='additionWrapper'>
                                     <div>
@@ -291,9 +298,14 @@ export default function DoubleLeaf() {
                                         <p>Столб бетонируемый 100 × 100 × 4</p>
                                     </div>
                                 </div>
+                                
                             </div>
                         }
-                        
+                        <h5>ВЫБЕРИТЕ БРЕНД:</h5>
+                        <div className='buttonWrapper'>
+                            <button onSelectCapture={true}  onClick={() => setActiveTab(1)}>alutech</button>
+                            <button onClick={() => setActiveTab(2)}>doorhan</button>
+                        </div>
                     </div>
                     
 

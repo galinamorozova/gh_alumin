@@ -1,7 +1,8 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
 import './transparentRollet.scss';
 import SideMenu from '../../sideMenu/SideMenu';
+import FindPrice from '../../findPrice/FindPrice';
+
 
 import transpTittle from '../../../images/rollet/transpTittle.jpeg';
 import transprollet from '../../../images/rollet/transpRollet.jpeg';
@@ -51,7 +52,7 @@ export default function TransparentRollet() {
                             <img src={transprollet4} alt='ручное управление'/>
                             <p>Ручное управление.<span> Предусмотрена возможность открытия ворот вручную при помощи ручки.</span></p>
                         </div>  
-                        <NavLink to="/callback">узнать подробнее</NavLink> 
+                        <FindPrice/>
                     </div>
                     
 

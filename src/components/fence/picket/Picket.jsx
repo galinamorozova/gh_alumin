@@ -1,6 +1,7 @@
 import React from 'react';
 import './picket.scss';
 import SideMenu from '../../sideMenu/SideMenu';
+import FindPrice from '../../findPrice/FindPrice';
 
 import picketTitle from '../../../images/fence/picketTitle.jpg';
 import picketPluses from '../../../images/fence/picketPluses.jpg';
@@ -158,6 +159,7 @@ export default function Picket() {
                                     </div>
                                 </div>
                                 <p>ВОЗМОЖНО ОКРАШИВАНИЕ И В ДРУГИЕ ЦВЕТА. Все подробности - у менеджеров.</p>
+                                <FindPrice/>
                             </div>
                         </div>
                     </div>

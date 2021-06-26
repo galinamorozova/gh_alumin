@@ -26,7 +26,7 @@ export default function AluConstructions() {
                         </NavLink>
                         <NavLink className='product' to='/aluBalcony'>
                             <img src={aluminBalcony} alt='лоджии'></img>
-                            <p>Алюминиевые лоджии</p>
+                            <p>Алюминиевые лоджии / террасы / беседки</p>
                         </NavLink>
                         <NavLink className='product' to='/aluDoor'>
                             <img src={alDoor} alt='двери'></img>

@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { YMInitializer } from 'react-yandex-metrika';
+import Metrika from './components/metrika/Metrika';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <YMInitializer accounts={[78753393]} options={{webvisor: true}} version="2"/>
+    <Metrika accounts={[78753393]}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

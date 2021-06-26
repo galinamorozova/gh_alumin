@@ -1,6 +1,7 @@
 import React from 'react';
 import './autoDoor.scss';
 import SideMenu from '../sideMenu/SideMenu';
+import { NavLink } from "react-router-dom";
 
 import titleDoor from '../../images/autoDoor/titleDoor.png';
 import autoDoor1 from '../../images/autoDoor/autoDoor1.png';
@@ -16,6 +17,9 @@ import gear from '../../images/autoDoor/gear.png';
 import telescopeDoor from '../../images/autoDoor/telescopeDoor.png';
 import revolver1 from '../../images/autoDoor/revolver1.png';
 import revolver2 from '../../images/autoDoor/revolver2.png';
+
+import alDoor from '../../images/alumConstructions/ordinaryDoor.jpeg';
+import FindPrice from '../findPrice/FindPrice';
 
 export default function AutoDoor() { 
     return( 
@@ -91,18 +95,20 @@ export default function AutoDoor() {
                             <p>• <span>Функция эвакуационного выхода. </span>                    
                             Приводы Gilgen могут быть подключены к системам пожарной сигнализации, обеспечивая их  автоматическое распахивание в экстренных случаях. Такой режим работы приводов позволяет их устанавливать на путях эвакуации для организации беспрепятственного выхода людей.</p>
                         </div>
-
-
-
-
                     </div>
-
-
-
-                    </div>
-
+                    <NavLink className='doorSection' to='/aluDoor'>
+                        <div>
+                            <h4>НЕАВТОМАТИЧЕСКИЕ АЛЮМИНИЕВЫЕ ДВЕРИ</h4>
+                            <p>Помимо автоматизированных дверей мы осуществляем изготовление и установку обычных входных / межкомнатных алюминиевых дверей, не предполагающих автоматизации. С ними Вы можете ознакомиться в этом разделе:</p>
+                            <i className="fas fa-hand-point-right"></i>
+                        </div>
+                        <div><img src={alDoor} alt='алюминиевые двери'/></div>
+                    </NavLink>
+                    <FindPrice/>
+                </div>
                     
                 </div>
+                
             </div>
 
 

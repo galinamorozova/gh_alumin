@@ -40,6 +40,14 @@ import antenna from '../../images/doorhan/antenna.jpg';
 import keyPad from '../../images/doorhan/keyPad.jpg';
 import fingerprint from '../../images/doorhan/fingerprint.jpg';
 
+import hopp from '../../images/avtomation/hopp7024.png';
+import wg from '../../images/avtomation/wg4024.png';
+import wl from '../../images/avtomation/wl1024.png';
+import hyke from '../../images/avtomation/hyke-7224.jpg';
+import hyppo from '../../images/avtomation/hyppo7005.jpg';
+import fab from '../../images/avtomation/m-fab-3010.jpg';
+import to from '../../images/avtomation/to4024.jpg';
+import too from '../../images/avtomation/too3000.jpg';
 
 
 
@@ -55,6 +63,7 @@ export default function Automation() {
                     <SideMenu/>
 
                     <div className='button_content'>
+                    <h5>ВЫБЕРИТЕ БРЕНД:</h5>
                         <div className='buttonWrapper'>
                             <button autoFocus={true} onSelectCapture={true}  onClick={() => setActiveTab(1)}>alutech</button>
                             <button onClick={() => setActiveTab(2)}>nice</button>
@@ -63,6 +72,7 @@ export default function Automation() {
                         </div>
                         {activeTab === 1 && 
                             <div className='content'>
+                            <h3>автоматика alutech</h3>
                                 <img src={titleAvtomatic} alt='titleAvtomatic'/>
                                 <h2>Автоматика для гаражных ворот АЛЮТЕХ</h2>
                                 <div className='speedLevigato'>
@@ -98,7 +108,7 @@ export default function Automation() {
                                     </div>
                                 </div>
 
-                                <h2>Автоматика для промышленных ворот</h2>
+                                <h2>Автоматика для промышленных ворот АЛЮТЕХ</h2>
                                 <div className='targo'>
                                     <div>
                                         <img src={targo} alt='привод targo'/>
@@ -126,7 +136,7 @@ export default function Automation() {
                                     </div>
                                 </div>
 
-                                <h2>Автоматика для откатных ворот</h2>
+                                <h2>Автоматика для откатных ворот АЛЮТЕХ</h2>
                                 <div className='roteo'>
                                     <div>
                                         <img src={roteo} alt='привод roteo'/>
@@ -146,7 +156,7 @@ export default function Automation() {
                                     </div>
                                 </div>
 
-                                <h2>Автоматика для распашных ворот</h2>
+                                <h2>Автоматика для распашных ворот АЛЮТЕХ</h2>
                                 <div className='scopio'>
                                     <div>
                                         <img src={scopio} alt='привод scopio'/>
@@ -185,6 +195,7 @@ export default function Automation() {
                         }
                         {activeTab === 2 && 
                             <div className='content'>
+                            <h3>автоматика nice</h3>
                             <h2>Автоматика для гаражных ворот НАЙС</h2>
                                 <div className='shel'>
                                     <img src={niceShel} alt='shel75'/>
@@ -341,10 +352,176 @@ export default function Automation() {
                                 <p>Режим неполного открытия створки ворот (режим проветривания помещения).</p>
                                 </div>
                             </div>
+
+                            <h2>Автоматика для распашных ворот НАЙС</h2>
+                            <h4>1)ЛИНЕЙНОГО ТИПА:</h4>
+                            <div className='doubleLeafNice'>
+                                <img src={too} alt='распашная автоматика'/>
+                                <div>
+                                    <h2>Серия TOO3000</h2>
+                                    <h3>Параметры</h3>
+                                    <div className='parameters'>
+                                        <p>Питание</p> <p>230 Вольт пер.тока, 50Гц</p>
+                                        <p>Питание двигателя</p>  <p>- Вольт пост. тока</p>
+                                        <p>Номинальный ток</p> <p>1,1 А</p>
+                                        <p>Мощность</p> <p>250 Ватт</p>
+                                        <p>Максимальная скорость</p> <p>0,016 метров в секунду</p>
+                                        <p>Усилие</p> <p>300 Ньютон</p>
+                                        <p>Интенсивность</p> <p>50 %</p>
+                                        <p>Класc защиты</p> <p>54 IP</p>
+                                        <p>Рабочая температура</p> <p>-20 / +50 °C мин/макс</p>
+                                        <p>Размеры</p> <p>700х100х177 мм</p>
+                                        <p>Вес</p> <p>5,5 кг</p>
+                                    </div>
+                                </div>
                             </div>
+                            <div className='doubleLeafNice'>
+                                <img src={wg} alt='распашная автоматика'/>
+                                <div>
+                                    <h2>Серия WINGO: модели WG4024, 5024, 4000, 5000, 3524HS</h2>
+                                    <h3>Параметры</h3>
+                                    <div className='parameters'>
+                                        <p>Питание</p> <p> - Вольт пер.тока, 50Гц</p>
+                                        <p>Питание двигателя</p>  <p>От 24 до 230 Вольт пост. тока</p>
+                                        <p>Номинальный ток</p> <p>3,5 А</p>
+                                        <p>Мощность</p> <p>От 85 до 200 Ватт</p>
+                                        <p>Максимальная скорость</p> <p>От 0,04 до 0,018 метров в секунду</p>
+                                        <p>Усилие</p> <p>1500 Ньютон</p>
+                                        <p>Интенсивность</p> <p>50 %</p>
+                                        <p>Класc защиты</p> <p>44 IP</p>
+                                        <p>Рабочая температура</p> <p>-20 / +50 °C мин/макс</p>
+                                        <p>Размеры</p> <p>От 770х98х95 до 920Х98Х95 мм</p>
+                                        <p>Вес</p> <p>6 кг</p>
+                                    </div>
+                                </div>
+                            </div>
+                             <div className='doubleLeafNice'>
+                                <img src={to} alt='распашная автоматика'/>
+                                <div>
+                                    <h2>Серия TOONA: модели 4016P, 4024, 5016Р, 5024, 7024, 5024HS, 6024HS</h2>
+                                    <h3>Параметры</h3>
+                                    <div className='parameters'>
+                                        <p>Питание</p> <p> От 24 до 230 Вольт пер.тока, 50Гц</p>
+                                        <p>Питание двигателя</p>  <p>- Вольт пост. тока</p>
+                                        <p>Номинальный ток</p> <p>1,7 А</p>
+                                        <p>Мощность</p> <p>От 120 до 385 Ватт</p>
+                                        <p>Максимальная скорость</p> <p>0,013 до 0,025 метров в секунду</p>
+                                        <p>Усилие</p> <p>От 1800 до 3200 Ньютон</p>
+                                        <p>Интенсивность</p> <p>От 50 до 100 %</p>
+                                        <p>Класc защиты</p> <p>44 IP</p>
+                                        <p>Рабочая температура</p> <p>-20 / +50 °C мин/макс</p>
+                                        <p>Размеры</p> <p>От 820х115х105 до 1200х128х150 мм</p>
+                                        <p>Вес</p> <p>От 6 до 15 кг</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>2)РЫЧАЖНОГО ТИПА:</h4>
+                            <div className='doubleLeafNice'>
+                                <img src={wl} alt='распашная автоматика'/>
+                                <div>
+                                    <h2>серии WALKY: модели 1024, 1024С</h2>
+                                    <h3>Параметры</h3>
+                                    <div className='parameters'>
+                                        <p>Питание</p> <p> - Вольт пер.тока, 50Гц</p>
+                                        <p>Питание двигателя</p>  <p>24 Вольт пост. тока</p>
+                                        <p>Номинальный ток</p> <p>От 0.8 до 2 А</p>
+                                        <p>Мощность</p> <p>от30 до 120 Ватт</p>
+                                        <p>Максимальная скорость</p> <p>2,2 0боротов в минуту</p>
+                                        <p>Усилие/ крутящий момент</p> <p>120 Ньютон/метр</p>
+                                        <p>Интенсивность</p> <p>50 Циклов в час</p>
+                                        <p>Класc защиты</p> <p>44 IP</p>
+                                        <p>Рабочая температура</p> <p>-20 / +50 °C мин/макс</p>
+                                        <p>Размеры</p> <p>90х125х385 мм</p>
+                                        <p>Вес</p> <p>4,3 кг</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='doubleLeafNice'>
+                                <img src={hopp} alt='распашная автоматика'/>
+                                <div>
+                                    <h2>серия HOPP: модели HO7124, 7224</h2>
+                                    <h3>Параметры</h3>
+                                    <div className='parameters'>
+                                        <p>Питание</p> <p> 230 Вольт пер.тока, 50Гц</p>
+                                        <p>Питание двигателя</p>  <p>24 Вольт пост. тока</p>
+                                        <p>Номинальный ток</p> <p>1,3 А</p>
+                                        <p>Мощность</p> <p>100 Ватт</p>
+                                        <p>Максимальная скорость</p> <p>От 100 до 280 0боротов в минуту</p>
+                                        <p>Усилие/ крутящий момент</p> <p>250 Ньютон/метр</p>
+                                        <p>Интенсивность</p> <p>35 Циклов в час</p>
+                                        <p>Класc защиты</p> <p>54 IP</p>
+                                        <p>Рабочая температура</p> <p>-20 / +50 °C мин/макс</p>
+                                        <p>Размеры</p> <p>252х180х290 мм</p>
+                                        <p>Вес</p> <p>От 6.5 до 9 кг</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='doubleLeafNice'>
+                                <img src={hyppo} alt='распашная автоматика'/>
+                                <div>
+                                    <h2>серии HYPPO HY7005</h2>
+                                    <h3>Параметры</h3>
+                                    <div className='parameters'>
+                                        <p>Питание</p> <p> 230 Вольт пер.тока, 50Гц</p>
+                                        <p>Питание двигателя</p>  <p>24 Вольт пост. тока</p>
+                                        <p>Номинальный ток</p> <p>1,2 А</p>
+                                        <p>Мощность</p> <p>250 Ватт</p>
+                                        <p>Максимальная скорость</p> <p>1,7 0боротов в минуту</p>
+                                        <p>Усилие/ крутящий момент</p> <p>400 Ньютон/метр</p>
+                                        <p>Интенсивность</p> <p>20 Циклов в час</p>
+                                        <p>Класc защиты</p> <p>43 IP</p>
+                                        <p>Рабочая температура</p> <p>-20 / +50 °C мин/макс</p>
+                                        <p>Размеры</p> <p>350х165х242 мм</p>
+                                        <p>Вес</p> <p>13 кг</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='doubleLeafNice'>
+                                <img src={hyke} alt='распашная автоматика'/>
+                                <div>
+                                    <h2>серии HYKE: модели HK7024,7224,HK7024HS,HK7224HS</h2>
+                                    <h3>Параметры</h3>
+                                    <div className='parameters'>
+                                        <p>Питание</p> <p> - Вольт пер.тока, 50Гц</p>
+                                        <p>Питание двигателя</p>  <p>24 Вольт пост. тока</p>
+                                        <p>Номинальный ток</p> <p>От 1.5 до 6 А</p>
+                                        <p>Мощность</p> <p>140 до 300 Ватт</p>
+                                        <p>Максимальная скорость</p> <p>1,5 0боротов в минуту</p>
+                                        <p>Усилие/ крутящий момент</p> <p>500 Ньютон/метр</p>
+                                        <p>Интенсивность</p> <p>40 Циклов в час</p>
+                                        <p>Класc защиты</p> <p>54 IP</p>
+                                        <p>Рабочая температура</p> <p>-20 / +50 °C мин/макс</p>
+                                        <p>Размеры</p> <p>290х210х320 мм</p>
+                                        <p>Вес</p> <p>9,5 кг</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>3)ПОДЗЕМНОГО ТИПА:</h4>
+                            <div className='doubleLeafNice'>
+                                <img src={fab} alt='распашная автоматика'/>
+                                <div>
+                                    <h2>Серия M-FAB: модели M-FAB 3010,3024, BIG-FAB 5024</h2>
+                                    <h3>Параметры</h3>
+                                    <div className='parameters'>
+                                        <p>Питание</p> <p> 230 Вольт пер.тока, 50Гц</p>
+                                        <p>Питание двигателя</p>  <p>24 Вольт пост. тока</p>
+                                        <p>Номинальный ток</p> <p>От 1,4 до 7 А</p>
+                                        <p>Мощность</p> <p>От 170 до 290 Ватт</p>
+                                        <p>Максимальная скорость</p> <p>От 0,8 до 1,4 0боротов в минуту</p>
+                                        <p>Усилие/ крутящий момент</p> <p>От 300 до 400 Ньютон/метр</p>
+                                        <p>Интенсивность</p> <p>От 40 до 45 Циклов в час</p>
+                                        <p>Класc защиты</p> <p>67 IP</p>
+                                        <p>Рабочая температура</p> <p>-20 / +50 °C мин/макс</p>
+                                        <p>Размеры</p> <p>от 390х322х194,5 до 400x325x150 мм</p>
+                                        <p>Вес</p> <p>12 кг</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         }
                         {activeTab === 3 && 
                             <div className='content'>
+                            <h3>автоматика doorhan</h3>
                                 <h2>Автоматика для гаражных ворот ДОРХАН - потолочные приводы:</h2>
                                 <div className='sectional'>
                                     <img src={sectional800} alt='привод sectional'/>
@@ -598,6 +775,7 @@ export default function Automation() {
                         }
                         {activeTab === 4 && 
                             <div className='content'>
+                                <h3>автоматика hoermann</h3>
                                 <p>Наша компания реализует автоматику HOERMANN, поставляемую в комплектах готовых ворот.</p>
                                 <p>C этой автоматикой Вы можете ознакомиться в соответствующем разделе:</p>
                                 <NavLink className='hoermann' to='/garage'>
@@ -605,6 +783,13 @@ export default function Automation() {
                                 </NavLink>
                             </div>
                         }
+                        <h5>ВЫБЕРИТЕ БРЕНД:</h5>
+                        <div className='buttonWrapper'>
+                            <button onClick={() => setActiveTab(1)}>alutech</button>
+                            <button onClick={() => setActiveTab(2)}>nice</button>
+                            <button onClick={() => setActiveTab(3)}>doorhan</button>
+                            <button onClick={() => setActiveTab(4)}>hoermann</button>
+                        </div>
                     </div>
                     
 

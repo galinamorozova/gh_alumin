@@ -85,6 +85,7 @@ export default function StandartRollets() {
                     <SideMenu/>
 
                     <div className='button_content'>
+                    <h5>ВЫБЕРИТЕ БРЕНД:</h5>
                         <div className='buttonWrapper'>
                             <button autoFocus={true} onSelectCapture={true}  onClick={() => setActiveTab(1)}>alutech</button>
                             <button onClick={() => setActiveTab(2)}>doorhan</button>
@@ -92,7 +93,7 @@ export default function StandartRollets() {
                         </div>
                         {activeTab === 1 && 
                             <div className='content'>
-                                <h3>Роллеты для окон, дверей, балконов. Противовзломные роллеты</h3>
+                                <h3>Роллеты для окон, дверей, балконов. Противовзломные роллеты ALUTECH</h3>
                                 <div className='titleImage'>
                                 <img src={title3} alt='роллета на окно'/>
                                 <img src={title2} alt='роллета на дверь'/>
@@ -637,6 +638,12 @@ export default function StandartRollets() {
 
                         </div>
                         }
+                        <h5>ВЫБЕРИТЕ БРЕНД:</h5>
+                        <div className='buttonWrapper'>
+                            <button onClick={() => setActiveTab(1)}>alutech</button>
+                            <button onClick={() => setActiveTab(2)}>doorhan</button>
+                            <button onClick={() => setActiveTab(3)}>стальные</button>
+                        </div>
                     </div>
                     
 

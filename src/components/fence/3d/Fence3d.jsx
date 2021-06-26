@@ -7,6 +7,8 @@ import tittle1 from '../../../images/fence/tittle1.jpg';
 import tittle2 from '../../../images/fence/tittle2.jpg';
 import tittle3 from '../../../images/fence/tittle3.jpg';
 import sample from '../../../images/fence/sample.jpg';
+import withGates from '../../../images/fence/withGates.jpg';
+import example from '../../../images/fence/example.jpg';
 
 export default function fence3d() { 
     return( 
@@ -40,6 +42,16 @@ export default function fence3d() {
                             <li>Гарантия на сохранность внешнего вида 10 лет.</li>
                             <li>Установка возможна как посредством бетонирования столбов, так и с использованием винтовых опор, что позволяет монтировать на любом грунте и в любых климатических зонах.</li>
                         </ul>
+                    </div>
+                    <div className='fenceGates'>
+                        <div>
+                        <img src={withGates} alt=''/>
+                        <p>Cетка гиттер -это прекрасный материал не только для ограждений. Ее можно использовать в качестве заполнения для ворот, калиток.</p>
+                        </div>
+                        <div>
+                        <img src={example} alt=''/>
+                        <p>Таким образом, сочетание ворот и забора из 3D сетки образует ограждение в едином стиле, обеспечивающим максимальную солярность</p>
+                        </div>
                     </div>
                     <FindPrice/>
                     </div>

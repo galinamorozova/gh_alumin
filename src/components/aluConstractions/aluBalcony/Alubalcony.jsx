@@ -11,6 +11,7 @@ import variantToOpen1 from '../../../images/alumConstructions/variantToOpen1.jpe
 import variantToOpen2 from '../../../images/alumConstructions/variantToOpen2.jpeg';
 import variantToOpen3 from '../../../images/alumConstructions/variantToOpen3.jpeg';
 import variantToOpen4 from '../../../images/alumConstructions/variantToOpen4.jpeg';
+import terassa from '../../../images/alumConstructions/terassa.jpeg';
 
 export default function AluBalcony() { 
     return( 
@@ -21,7 +22,7 @@ export default function AluBalcony() {
                     <SideMenu/>
 
                     <div className='button_content'>
-                    <h3>Алюминиевые лоджии</h3>
+                    <h3>Алюминиевые лоджии / балконы / террасы / веранды</h3>
                     <img src={AluBalconyTitle} alt='алюминиевые лоджии'/>
 
                     <p>Наша компания занимается изготовлением и монтажом алюминиевых конструкций разных видов (фасады, лоджии, окна, перегородки) как из теплого алюминия так и из холодного.</p>
@@ -49,10 +50,12 @@ export default function AluBalcony() {
 
 
                     <div className='alBalcony'>
-                        <img src={aluminBalcony} alt='алюминиевые лоджии'/>
+                        <img src={terassa} alt='алюминиевые лоджии'/>
                         <div>
+                            <h3>Остекление террас, беседок и балконов</h3>
                             <p>Остекление балкона алюминием – это процесс установки на балконную плиту светопрозрачной конструкции. Состоит она из алюминиевого каркаса или рамы, стеклянных камер. Предназначена для ограждения, защиты помещения от холода, ветра, осадков, уличной пыли и звуков.</p>
                             <p>Алюминиевый каркас светопрозрачных конструкций отличается легким весом. Он не оказывает давление на несущие стены и плиты балкона. Поэтому подобные изделия можно использовать для обустройства домов старой застройки.</p>
+                            <p>Остекление беседок и террас осуществляется абсолютно аналогичным образом. При этом можно выбрать различные варианты: от панорамного остекления до комбинации с "глухими" сегментами. </p>
                         </div>
                     </div>
 

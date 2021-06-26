@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import './sliding.scss';
 import SideMenu from '../../../sideMenu/SideMenu';
+import FindPrice from '../../../findPrice/FindPrice';
+import AutomaticSection from '../AutomaticSection';
 
 import title_sliding from '../../../../images/sliding/title_sliding.jpg';
 import colors from '../../../../images/double-leaf/colors.png';
@@ -71,12 +73,15 @@ export default function Sliding() {
                     <SideMenu/>
 
                     <div className='button_content'>
+                    <h5>ВЫБЕРИТЕ БРЕНД:</h5>
                         <div className='buttonWrapper'>
                             <button autoFocus={true} onSelectCapture={true}  onClick={() => setActiveTab(1)}>alutech</button>
                             <button onClick={() => setActiveTab(2)}>doorhan</button>
+                            <button onClick={() => setActiveTab(3)}>комплект для самостоятельного монтажа</button>
                         </div>
                         {activeTab === 1 && 
                             <div className='content'>
+                                <h3>откатные ворота alutech</h3>
                                 <img src={title_sliding} alt='откатные ворота'/>
                                 <p>При открытии откатных ворот створка смещается вдоль забора и не занимает территорию въезда. Поэтому такие конструкции подходят даже для небольших участков.</p>
 
@@ -98,12 +103,12 @@ export default function Sliding() {
                                 <div className='complectWrapper'>
                                     <div><img src={complect} alt='комплект для откатных ворот'/></div>
                                     <div>
-                                    <p>Если у Вас <span>уже есть ворота</span>, которые нужно транформировать в откатные.</p>
-                                    <p>Если Ваши ворота изготовляются по индивидуальному дизайну из специальных, подходящих только для Вас материалов, и Вам <span>нужна лишь система откатной автоматики</span>.</p>
-                                    <p>Если Вы ищите способ <span>разумной экономии</span>.</p>
+                                    <p>Когда нужен: </p>
+                                    <p> - Если у Вас <span>уже есть ворота</span>, которые нужно транформировать в откатные.</p>
+                                    <p> - Если Ваши ворота изготовляются по индивидуальному дизайну из специальных, подходящих только для Вас материалов, и Вам <span>нужна лишь система откатной автоматики</span>.</p>
+                                    <p> - Если Вы ищите способ <span>разумной экономии</span>.</p>
                                     </div>
                                 </div>
-                                
 
                                 <h3>варианты исполнения</h3>
                                 <div className='variantWrapper'>
@@ -148,12 +153,13 @@ export default function Sliding() {
                                     <p><strong>Ручное управление</strong> - распашных воротах серии Prestige предусмотрена возможность открытия ворот вручную при помощи ручки.</p>
 
                                 </div>
-
+                                <AutomaticSection/>
 
                             </div>
                         }
                         {activeTab === 2 && 
                             <div className='content'>
+                                <h3>откатные ворота doorhan</h3>
                                 <h2>Откатные ворота в алюминиевой раме с заполнением сэндвич-панелями SLG-A</h2>
                                 <img src={doorhanTitle} alt='откатные ворота Дорхан'/>
                                 <h4>ХАРАКТЕРИСТИКИ:</h4>
@@ -268,6 +274,7 @@ export default function Sliding() {
                                         <p>Крышки для балки</p>
                                     </div>
                                 </div>
+                                <AutomaticSection/>
                                 <h4>ДОПОЛНИТЕЛЬНАЯ КОМПЛЕКТАЦИЯ</h4>
                                 <div className='additionWrapper'>
                                     <div>
@@ -301,7 +308,30 @@ export default function Sliding() {
                                 </div>
                             </div>
                         }
-                        
+                        {activeTab === 3 && 
+                            <div className='content'>
+
+                                <h2>Набор комплектующих для откатных ворот</h2>
+                                <div className='complectWrapper'>
+                                    <div><img src={complect} alt='комплект для откатных ворот'/></div>
+                                    <div>
+                                    <p>Когда нужен: </p>
+                                    <p> - Если у Вас <span>уже есть ворота</span>, которые нужно транформировать в откатные.</p>
+                                    <p> - Если Ваши ворота изготовляются по индивидуальному дизайну из специальных, подходящих только для Вас материалов, и Вам <span>нужна лишь система откатной автоматики</span>.</p>
+                                    <p> - Если Вы ищите способ <span>разумной экономии</span>.</p>
+                                    </div>
+                                </div>
+                                <AutomaticSection/>
+                                <FindPrice/>
+
+                            </div>
+                        }
+                        <h5>ВЫБЕРИТЕ БРЕНД:</h5>
+                        <div className='buttonWrapper'>
+                            <button onSelectCapture={true}  onClick={() => setActiveTab(1)}>alutech</button>
+                            <button onClick={() => setActiveTab(2)}>doorhan</button>
+                            <button onClick={() => setActiveTab(3)}>комплект для самостоятельного монтажа</button>
+                        </div>
                     </div>
                     
 

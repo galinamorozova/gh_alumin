@@ -2,6 +2,7 @@ import React from 'react';
 import './aluDoor.scss';
 import SideMenu from '../../sideMenu/SideMenu';
 import FindPrice from '../../findPrice/FindPrice';
+import { NavLink } from "react-router-dom";
 
 import warmAl from '../../../images/alumConstructions/warmAl.png';
 import coldAl from '../../../images/alumConstructions/coldAl.png';
@@ -12,6 +13,7 @@ import doubleDoor from '../../../images/alumConstructions/doubleDoor.jpg';
 import ordinaryDoor from '../../../images/alumConstructions/ordinaryDoor.jpeg';
 import pendulumDoor from '../../../images/alumConstructions/pendulumDoor.jpg';
 import doorTitle from '../../../images/alumConstructions/doorTitle.jpg';
+import autoDoor from '../../../images/autoDoor/autoDoor3.png';
 
 
 export default function AluDoor() { 
@@ -85,9 +87,17 @@ export default function AluDoor() {
                             <p>Круговое вращение подвижных секций относительно оси позволяет открывать дверь на 180 %. Конструктивное решение удобно в офисах и других общественных местах с большим потоком клиентов. Дверь с маятниковым механизмом оснащается специальным доводчиком, обеспечивающим плавное возвращение створки в исходное положение.</p>
                         </div>
                     </div>
+                    <NavLink className='doorSection' to='/aluDoor'>
+                        <div>
+                            <h4>АВТОМАТИЧЕСКИЕ АЛЮМИНИЕВЫЕ ДВЕРИ</h4>
+                            <p>Помимо стандартных неавтоматизированных дверей мы реализуем автоматические распашные, штульповые и маятниковые алюминиевые двери. С ними Вы можете ознакомиться в этом разделе:</p>
+                            <i className="fas fa-hand-point-right"></i>
+                        </div>
+                        <div><img src={autoDoor} alt='алюминиевые двери'/></div>
+                    </NavLink>
+                <FindPrice/>
                     </div>  
                 </div>
-                <FindPrice/>
             </div>
         </section>
     )

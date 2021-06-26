@@ -28,8 +28,8 @@ export default function FindPrice() {
                             <div className='callbackWrapper'>
                                 <input type="text" name='name' placeholder="Имя *" required/>
                                 <input type="phone" name='phone' placeholder="Телефон *" required/>
-                                <input type="text" name='message1' placeholder="Интересующий производитель/серия *" required/>
-                                <textarea type="text" name='message2' placeholder="Интересующее изделие для просчета, размеры, цвет и т.п. *" required/>
+                                <input type="text" name='message1' placeholder="Производитель/серия"/>
+                                <textarea type="text" name='message2' placeholder="Вид продукции для просчета, размеры, цвет, дополнительные аксессуары и другие важные на Ваш взгляд параметры *" required/>
                             </div>
                             <label><input type='checkbox' required/>Согласие лица на обработку персональных данных в соответствии с ФЗ №152 от 27.07.2006</label> <br/>
                             <button type='submit' value='send'>Отправить</button>

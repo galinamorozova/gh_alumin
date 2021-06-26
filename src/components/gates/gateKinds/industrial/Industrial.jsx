@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import ReactIntense from 'react-intense';
 import './industrial.scss';
 import SideMenu from '../../../sideMenu/SideMenu';
+import AutomaticSection from '../AutomaticSection';
 
 import protrend from './../../../../images/protrend.png';
 import proplus from './../../../../images/proplus.png';
@@ -75,13 +76,14 @@ export default function Industrial() {
                     <SideMenu/>
 
                     <div className='button_content'>
+                    <h5>ВЫБЕРИТЕ БРЕНД:</h5>
                         <div className='buttonWrapper'>
                             <button autoFocus={true} onSelectCapture={true}  onClick={() => setActiveTab(1)}>alutech</button>
                             <button onClick={() => setActiveTab(2)}>doorhan</button>
                         </div>
                         {activeTab === 1 && 
                             <div className='content'>
-
+                            <h3>промышленные ворота alutech</h3>
                             <div className='characteristicWrapper'>
                                     <div className='proTrend'>
                                         <h4>Промышленные секционные ворота серии ProTREND</h4>
@@ -160,6 +162,9 @@ export default function Industrial() {
                                 <ReactIntense src={colorPanel} moveSpeed={0}/>
                             </div>
                             <p>* По желанию заказчика возможно нанесение на полотно ворот индивидуальных рисунков любой степени сложности методом цифровой печати.</p>
+                           
+                            <AutomaticSection/>
+
                             <h4>ДОПОЛНИТЕЛЬНЫЕ ОПЦИИ</h4>
                             <div className='wicket'>
                                     <h5>Калитка в полотне</h5>
@@ -263,6 +268,7 @@ export default function Industrial() {
                         }
                         {activeTab === 2 && 
                             <div className='content'>
+                                <h3>промышленные ворота doorhan</h3>
                                 <h3>ПРОМЫШЛЕННЫЕ СЕКЦИОННЫЕ ВОРОТА ИЗ СТАЛЬНЫХ СЭНДВИЧ-ПАНЕЛЕЙ С ТОРСИОННЫМ МЕХАНИЗМОМ ISD01</h3>
                                 <div className='industrialDoorhan'>
                                     <img src={industrialDoorhan} alt="промышленные ворота Doorhan"/>
@@ -335,7 +341,7 @@ export default function Industrial() {
                                     <img src={other} alt='нестандартный'/>
                                 </div>
 
-
+                                <AutomaticSection/>
 
                                 <h4>БАЗОВАЯ КОМПЛЕКТАЦИЯ</h4>
 
@@ -408,6 +414,11 @@ export default function Industrial() {
                                 </div>
                             </div>
                         }
+                        <h5>ВЫБЕРИТЕ БРЕНД:</h5>
+                        <div className='buttonWrapper'>
+                            <button autoFocus={true} onSelectCapture={true}  onClick={() => setActiveTab(1)}>alutech</button>
+                            <button onClick={() => setActiveTab(2)}>doorhan</button>
+                        </div>
                     </div>
                 </div>
             </div>

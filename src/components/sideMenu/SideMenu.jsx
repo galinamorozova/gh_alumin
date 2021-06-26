@@ -32,8 +32,6 @@ export default function SideMenu() {
             <NavLink to='/fast'>скоростные ворота</NavLink></li>
             <li className={ gateMenuActive ? 'submenu_item_gate active' : 'submenu_item'}>
             <NavLink to='/wicket'>отдельная калитка</NavLink></li>
-            {/* <li className='submenu_item'>
-            <NavLink to='/fasadeWicket'>калитка в фасаде</NavLink></li> */}
         </ul>
     </li>
     <li className='menu_item'> 

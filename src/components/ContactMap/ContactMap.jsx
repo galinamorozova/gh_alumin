@@ -1,6 +1,5 @@
 import React from 'react';
 import { YMaps, Map, Placemark} from 'react-yandex-maps';
-//import officePhoto from '../ContactMap/office.jpg';
 
 export default function ContactMap (props) {
 

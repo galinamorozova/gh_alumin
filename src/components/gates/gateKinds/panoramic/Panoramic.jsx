@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './panoramic.scss';
 import SideMenu from '../../../sideMenu/SideMenu';
+import AutomaticSection from '../AutomaticSection';
 
 import titlePanoramic from '../../../../images/panoramic/title_panoramic.png';
 import alp from '../../../../images/panoramic/alp.png';
@@ -75,13 +76,14 @@ export default function Panoramic() {
                     <SideMenu/>
 
                     <div className='button_content'>
+                    <h5>ВЫБЕРИТЕ БРЕНД:</h5>
                         <div className='buttonWrapper'>
                             <button autoFocus={true} onSelectCapture={true}  onClick={() => setActiveTab(1)}>alutech</button>
                             <button onClick={() => setActiveTab(2)}>doorhan</button>
                         </div>
                         {activeTab === 1 && 
                             <div className='content'>
-                                <h3>панорамные ворота</h3>
+                                <h3>панорамные ворота alutech</h3>
                                 <img src={titlePanoramic} alt='панорамные ворота'/>
                                 <p><i class="fas fa-award"/>Максимальная обзорность. Цельное остекление для ворот шириной до 3 м</p>
                                 <p><i class="fas fa-award"/>Презентабельный внешний вид. Защита остекления от царапин и помутнения</p>
@@ -144,6 +146,7 @@ export default function Panoramic() {
                                     <p>Ручное управление<span> - на полотне ворот устанавливают ручку для подъема-опускания, на массивных воротах — блок или цепной редуктор. Ворота удобны в использовании: вес даже габаритных конструкций оптимально сбалансирован пружинами. Так, вы прилагаете минимальные усилия для управления.</span></p>
 
                                 </div>
+                                <AutomaticSection/>
 
                                 <h3>Дополнительные аксессуары</h3>	
                                 <div className='additionWrapper'>
@@ -198,6 +201,7 @@ export default function Panoramic() {
                         }
                         {activeTab === 2 && 
                             <div className='content'>
+                                <h3>панорамные ворота doorhan</h3>
                                 <h4>ПРОМЫШЛЕННЫЕ СЕКЦИОННЫЕ ВОРОТА ИЗ АЛЮМИНИЕВЫХ ПАНОРАМНЫХ ПАНЕЛЕЙ С ТОРСИОННЫМ МЕХАНИЗМОМ ISD02</h4>
                                 <img src={titlePanoramicDoorhan} alt='панорамные Doorhan'/>
                                 <h4>ХАРАКТЕРИСТИКИ:</h4>
@@ -325,6 +329,7 @@ export default function Panoramic() {
                                         <p>Эргономичная ручка позволяет легко и удобно открывать ворота.</p>
                                     </div>
                                 </div>
+                                <AutomaticSection/>
                                 <h4>ДОПОЛНИТЕЛЬНАЯ КОМПЛЕКТАЦИЯ</h4>
                                 <div className='additionWrapper'>
                                     <div>
@@ -363,6 +368,11 @@ export default function Panoramic() {
 
                             </div>
                         }
+                        <h5>ВЫБЕРИТЕ БРЕНД:</h5>
+                        <div className='buttonWrapper'>
+                            <button onSelectCapture={true}  onClick={() => setActiveTab(1)}>alutech</button>
+                            <button onClick={() => setActiveTab(2)}>doorhan</button>
+                        </div>
                     </div>
                     
 

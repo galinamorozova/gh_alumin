@@ -62,13 +62,14 @@ export default function Wicket() {
                     <SideMenu/>
 
                     <div className='button_content'>
+                    <h5>ВЫБЕРИТЕ БРЕНД:</h5>
                         <div className='buttonWrapper'>
                             <button autoFocus={true} onSelectCapture={true}  onClick={() => setActiveTab(1)}>alutech</button>
                             <button onClick={() => setActiveTab(2)}>doorhan</button>
                         </div>
                         {activeTab === 1 && 
                             <div className='content'>
-                                <h3>отдельная калитка</h3>
+                                <h3>отдельная калитка ALUTECH</h3>
                                 <div className='plusWrapper'>
                                     <img src={wicket_title} alt='калитка'/>
                                     <div>
@@ -121,7 +122,7 @@ export default function Wicket() {
                         }
                         {activeTab === 2 && 
                             <div className='content'>
-                            <h2>КАЛИТКА В АЛЮМИНИЕВОЙ РАМЕ С ЗАПОЛНЕНИЕМ СЭНДВИЧ-ПАНЕЛЯМИ PSD-A</h2>
+                            <h2>DOORHAN КАЛИТКА В АЛЮМИНИЕВОЙ РАМЕ С ЗАПОЛНЕНИЕМ СЭНДВИЧ-ПАНЕЛЯМИ PSD-A</h2>
                             <img src={titleWicket} alt='калитка Дорхан'/>
                             <h4>ХАРАКТЕРИСТИКИ:</h4>
                                 <div className='characteristics'>
@@ -252,6 +253,11 @@ export default function Wicket() {
                                 </div>
                             </div>
                         }
+                        <h5>ВЫБЕРИТЕ БРЕНД:</h5>
+                        <div className='buttonWrapper'>
+                            <button onClick={() => setActiveTab(1)}>alutech</button>
+                            <button onClick={() => setActiveTab(2)}>doorhan</button>
+                        </div>
                     </div>
                     
 

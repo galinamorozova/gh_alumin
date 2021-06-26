@@ -3,8 +3,9 @@ import {
   HashRouter as Router,
   Switch,
   Route,
-  NavLink
+  NavLink 
 } from "react-router-dom";
+import { YMInitializer } from 'react-yandex-metrika';
 
 import './App.scss';
 import logo from './images/logo3.png'
@@ -57,6 +58,7 @@ import Fence3d from './components/fence/3d/Fence3d';
 import Picket from './components/fence/picket/Picket';
 import FireFight from './components/fireFight/FireFight';
 import Handling from './components/handling/Handling';
+import Metrika from './components/metrika/Metrika';
 
 
 
@@ -66,6 +68,11 @@ function App() {
 
   return (
     <div className="App">
+    <Metrika accounts={[78753393]} options={{clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor: true}} version="2"/>
+    <YMInitializer accounts={[78753393]} options={{webvisor: true}} version="2"/>
     <Router>
      <div>
       <section className="titlePanel">

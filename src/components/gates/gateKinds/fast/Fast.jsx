@@ -47,12 +47,14 @@ export default function Fast() {
                     <SideMenu/>
 
                     <div className='button_content'>
+                        <h5>ВЫБЕРИТЕ ВИД:</h5>
                         <div className='buttonWrapper'>
                             <button autoFocus={true} onSelectCapture={true}  onClick={() => setActiveTab(1)}>Скоростные ПВХ ворота DOORHAN</button>
                             <button onClick={() => setActiveTab(2)}>Скоростные спиральные ворота DOORHAN</button>
                         </div>
                         {activeTab === 1 && 
                         <div className='content'>
+                            <h3>скоростные пвх ворота doorhan</h3>
                             <div className='PVHGates'>
                                 <img src={SDI} alt='SDI'/>
                                 <div className='gateView'>
@@ -243,6 +245,7 @@ export default function Fast() {
                         }
                         {activeTab === 2 && 
                             <div className='content'>
+                            <h3>скоростные спиральные ворота doorhan</h3>
                                 <h2>СКОРОСТНЫЕ СПИРАЛЬНЫЕ ВОРОТА СЕРИИ HSSD</h2>
                                 <div className='spiralGates'>
                                     <img src={fastspiralTitle} alt='спиральные ворота'/>
@@ -314,6 +317,11 @@ export default function Fast() {
                                     
                             </div>
                         }
+                        <h5>ВЫБЕРИТЕ ВИД:</h5>
+                        <div className='buttonWrapper'>
+                            <button onClick={() => setActiveTab(1)}>Скоростные ПВХ ворота DOORHAN</button>
+                            <button onClick={() => setActiveTab(2)}>Скоростные спиральные ворота DOORHAN</button>
+                        </div>
                     </div>
                     
 

@@ -38,41 +38,16 @@
 
         .button_content {
             flex-grow: 1;
+            button {
+                @media (max-width: 470px) {
+                    font-size: 1rem;
+                }
+            }
+            
         }
     
     }
 
-    .buttonWrapper {
-        display: flex;
-        justify-content: flex-start;
-        margin-top: 5rem;
-
-        button {
-            padding: 2rem;
-            font-family: $roboto-slab;
-            text-transform: uppercase;
-            border: 1.5px solid rgba(169, 169, 169, 0.2);
-            border-bottom: 1.5px solid #fbfbfb;
-            border-left: 1.5px solid #fbfbfb;
-            background-color: #fff;
-
-
-            @media (max-width: 375px) {
-                padding: 1rem; 
-            };
-
-
-            &:hover, &:active, &:focus {
-            outline: none;
-            background-color: #fbfbfb;
-            font-weight: bold;
-            color: #43a906; 
-            };
-            
-        };
-
-
-    }
 
      .content {
          padding: 3rem 2rem;
@@ -192,6 +167,7 @@
         gap: 1rem;
         box-shadow: 0px 1px 3px 0 rgba(72, 72, 72, 0.4);
         padding: 1rem;
+        
 
         img {
             object-fit: cover;
@@ -227,8 +203,9 @@
         margin-top: 1rem;
     
            @media (max-width: 500px) {
-                grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
             }
+          
     
         div {
             display: flex;
@@ -245,6 +222,13 @@
      }
      .additionalColor {
          display: flex;
+         justify-content: center;
+
+         @media (max-width: 574px) {
+            flex-wrap: wrap;
+        }
+
+        
 
          img {
              object-fit: cover;
